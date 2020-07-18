@@ -22,23 +22,23 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
+    <ImageView
         android:id="@+id/box_two_text"
-        style="@style/whiteBox"
         android:layout_width="130dp"
         android:layout_height="130dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:text="@string/box_two"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/box_one_text" />
+        app:layout_constraintTop_toBottomOf="@+id/box_one_text"
+        app:srcCompat="@android:drawable/btn_star_big_on"
+        android:contentDescription="@string/box_two_img" />
 
     <TextView
         android:id="@+id/box_three_text"
         style="@style/whiteBox"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/margin_wide"
+        android:layout_marginStart="16dp"
         android:layout_marginEnd="@dimen/margin_wide"
         android:text="@string/box_three"
         app:layout_constraintBottom_toTopOf="@+id/box_four_text"
@@ -51,7 +51,7 @@
         style="@style/whiteBox"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/margin_wide"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="@dimen/margin_wide"
         android:layout_marginEnd="@dimen/margin_wide"
         android:layout_marginBottom="@dimen/margin_wide"
